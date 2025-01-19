@@ -3,7 +3,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import SingIn from "./SingIn";
-import { SessionProvider } from "next-auth/react";
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
 import { SunIcon, MoonIcon } from "@heroicons/react/16/solid";

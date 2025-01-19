@@ -2,18 +2,15 @@
 import { Button } from "@headlessui/react";
 import { useSession, signIn } from "next-auth/react";
 import { Dialog, DialogPanel, DialogTitle } from '@headlessui/react'
-import { useState } from 'react'
 export default function Home(): React.ReactNode {
   const { data: session } = useSession();
-
-  let [isOpen, setIsOpen] = useState(true)
 
 
   if (!session) {
     return (<>
 
 
-      <Dialog open={isOpen} as="div" className="relative z-10 focus:outline-none text-center" onClose={close} >
+      <Dialog open={true} as="div" className="relative z-10 focus:outline-none text-center" onClose={() => { }}>
         <div className="fixed inset-0 z-10 w-screen overflow-y-auto">
           <div className="flex min-h-full items-center justify-center p-4">
             <DialogPanel
