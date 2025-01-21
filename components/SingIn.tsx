@@ -7,10 +7,9 @@ import {
 
 } from "@heroicons/react/16/solid";
 import Image from "next/image";
+
 export default function SignIn(): React.ReactNode {
     const { data: session } = useSession();
-
-    console.log(session);
 
     if (session && session.user) {
         const { name = "", email = "", image = "" } = session.user;

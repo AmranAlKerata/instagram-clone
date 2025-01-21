@@ -8,9 +8,3 @@ const nextConfig: NextConfig = {
 };
 
 export default nextConfig;
-
-module.exports = {
-  env: {
-    NEXTAUTH_SECRET: process.env.NEXTAUTH_SECRET,
-  },
-};
